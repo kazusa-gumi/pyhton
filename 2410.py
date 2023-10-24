@@ -93,7 +93,7 @@ for x in range(5):
         #２以外は続ける
         continue
     print(x)
-'''
+
 
 x = 0
 while x <=5:
@@ -101,6 +101,17 @@ while x <=5:
     x+=1
 else: 
     print('finished')
-    
 
+
+n=1
+while n < 10:
+    print(n,'\t', n**2)
+    n +=1
+
+'''
+
+for i in range(1,11):
+    for j in range(i):
+        print(i, end =' ')
+    print(' ')
 
