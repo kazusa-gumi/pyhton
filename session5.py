@@ -15,5 +15,25 @@ print(fruits)
 
 
 # range(5) = [0,1,2,3,4]
-for i in range(len(fruits) ): # could use 5 instead
-    print(fruits[i])
+# for i in range(len(fruits) ): # could use 5 instead
+#     print(fruits[i])
+
+# while loop
+# i= 0
+# # ini
+# while i < len(fruits): # test
+#     print(fruits[i])
+# i += 1
+
+
+# length method
+fruits = ["apple", "banana", "peach", "oranges", "grapes"]
+print(len(fruits))
+
+# append method
+fruits.append('apple')
+print(fruits)
+
+# insert method
+fruits.insert(3, 'apple2')
+print(fruits)
