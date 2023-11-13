@@ -59,3 +59,57 @@ print(nos)
 # index 1から4つずつ要素飛ばしで10,11,12を置き換えている。
 nos[1::4] = [10, 11, 12]
 print(nos)
+
+nums =[10,20,40,50,60,70,80,90]
+nums[::2] =[1,1,1,1]
+print(nums)
+
+# del
+# 要素0から始まり、３ずつ飛ばして要素削除
+del nums[::3]
+print(nums)
+
+nums2 =[10,20,40,50,60,70,80,90]
+# 1~7までの要素を2ずつ飛ばして削除する。
+del nums2[1:7:2]
+print(nums2)
+
+'''
+states = ["QLD", "NSW", "ACT", "VIC", "TAS", "SA", "WA", "NT"]
+found = False
+theState = input("Enter a state: ")
+for i in states:
+    if i == theState:
+        found = True
+        break  # ここに移動
+
+if not found:
+    print("Not a valid state")
+else:
+    print("Valid state entered")
+
+
+states = ["QLD", "NSW", "ACT", "VIC", "TAS", "SA", "WA",
+"NT"]
+print("Enter a state of Australia:", end=" ")
+theState = input()
+num = states.count(theState)
+# or isThere = theState in states
+print(num)
+if num == 0:
+    print("Not a valid state")
+else:
+    print("Valid state entered")
+'''
+
+names = ["Fred", "Barney", "Wilma", "Betty"]
+ages = [35, 34, 29, 30]
+# 対応する要素をペアにする。（zip)
+output = zip(names, ages)
+
+#各行にして表示
+for i in list(output):
+    print(i)
+
+# 一列で表示 
+print(list(zip(names, ages)))
