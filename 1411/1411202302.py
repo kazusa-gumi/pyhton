@@ -39,7 +39,7 @@ person = {
 person["mywork_place"] = person.pop("suburb")
 
 print(person)
-'''
+
 
 purse = {"money":10,"tissues":"Kleenex","candy":"pink"}
 print(purse["candy"])
@@ -72,12 +72,43 @@ print("******************************:")
 print("******************************:")
 teacher = {"name": "Agnes", "age": "guess!"}
 newTeacher = teacher.copy() # do NOT just assign (=)
-#newTeacher["age"] = 35
+newTeacher["age"] = 35
 print("teacher")
 print(teacher)
 print("newTeacher")
 print(newTeacher)
 
-newTeacher = dict(teacher)
-print(newTeacher)
+print('dictionary')
+newTeacher = dict(teacher) # dictコンストラクターを使ってteacher辞書をコピー
+print(newTeacher) # 新しいnewTeacher辞書を印刷
 
+print("******************************:")
+keys = [10, 20, 30]
+values = ['Ten', 'Twenty', 'Thirty']
+newDict = dict(zip(keys, values))
+print(newDict)
+print("******************************:")
+
+myFamily = {
+"p1" : { "name" : "Peter" , "starSign": "Gemini"},
+"p2" : { "name" : "Agnes", "starSign": "Pisces"},
+"p3" : { "name" : "Michael", "starSign": "Aries"}
+}
+print(myFamily)
+print(myFamily["p2"])
+print(myFamily["p2"]["name"])
+'''
+
+# fromkey
+l =[1,2,3]
+t = 5
+# 第一引数でkey を指定、第二引数でvalueを指定している。
+new_dict = dict.fromkeys(l,t)
+print(new_dict)
+
+print("************************************************************")
+teachers = ['Agnes', 'Akrati']
+defaults = {"jobTitle": 'Teacher', "salary": 80000}
+res = dict.fromkeys(teachers, defaults)
+print(res) # new dictionary
+print(res["Agnes"]) # individual data
