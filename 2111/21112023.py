@@ -31,3 +31,25 @@ print(x)
 index = (1,2,3,4,5,6,7,8,9,10,12,13,14,15,16)
 x1= index.index(3)
 print(x1)
+
+#Sets
+thisset = {"apple", "banana", "cherry"}
+print(thisset)
+# type
+print(type(thisset))
+# boolean true
+print("banana" in thisset)
+# boolean false
+print("orange" in thisset)
+
+thisset.add("Orange")
+print(thisset)
+
+thisset.update(["Orange", "Mango", "Grapes"])
+print(thisset)
+
+# difference method
+x2= {"apple", "banana", "cherry"}
+y2 = {"google", "microsoft", "apple"}
+z2 = x2.difference(y2)
+print(z2)
