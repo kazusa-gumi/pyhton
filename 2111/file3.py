@@ -1,0 +1,5 @@
+f = open('hello.txt', 'a')
+f.write("\nLine Three")
+f.write("\nLine Four")
+f.write("\nLine Five")
+f.close()

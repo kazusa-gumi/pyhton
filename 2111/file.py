@@ -21,3 +21,5 @@ print(file.readlines())
 
 file.close()
 
+
+
