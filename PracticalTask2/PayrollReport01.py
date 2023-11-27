@@ -1,5 +1,3 @@
-# 関数を定義する
-
 def read_employee_data(filename):
     employees = []
     with open(filename, 'r') as file:
@@ -21,6 +19,11 @@ def read_employee_data(filename):
             }
             employees.append(employee)
     return employees
+
+def print_employees(employees):
+    for employee in employees:
+        print(f"{employee['id']} {employee['name']} {employee['position']} ${employee['salary']:.2f}")
+
 
 def calculate_salaries(employees):
     total_salaries = {
@@ -48,17 +51,33 @@ def calculate_salaries(employees):
 
 def write_payroll_report(report_data, filename):
     with open(filename, 'w') as file:
+        file.write(f"Total payroll: ${report_data['total_salary']:.2f}\n")
+        file.write(f"Number of payroll: {report_data['num_employees']}\n")
+        file.write(f"Average payroll: ${report_data['average_salary']:.2f}\n")
+        file.write("\nTotal pay for:\n")
         for position, total in report_data['totals_by_position'].items():
-            file.write(f"Total salaries for {position}: {total:.2f}\n")
-        file.write(f"Total number of employees: {report_data['num_employees']}\n")
-        file.write(f"Overall total payroll amount: {report_data['total_salary']:.2f}\n")
-        file.write(f"Average payroll: {report_data['average_salary']:.2f}\n")
+            file.write(f"Total salaries for {position}: ${total:.2f}\n")
 
-# 主な実行関数
+def write_employees_report(employees, filename):
+    with open(filename, 'w') as file:
+        for employee in employees:
+            file.write(f"{employee['id']} {employee['name']} {employee['position']} ${employee['salary']:.2f}\n")
+
 def main():
-    employees = read_employee_data('employees.txt')
+    # Specify the full path to the 'Employees.txt' file
+    employees_file_path = './Practicaltask2/Employees.txt'
+    # Read employee information from the file
+    employees = read_employee_data(employees_file_path)
+    # Calculate payroll information
     payroll_data = calculate_salaries(employees)
-    write_payroll_report(payroll_data, 'PayrollReport.txt')
+    # Write the payroll report to a file
+    payroll_report_path = './Practicaltask2/PayrollReport.txt'
+    write_payroll_report(payroll_data, payroll_report_path)
+    # Write the formatted employee information to a file
+    employees_report_path = './Practicaltask2/EmployeesReport.txt'
+    write_employees_report(employees, employees_report_path)
 
 if __name__ == '__main__':
     main()
+
+
