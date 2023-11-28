@@ -1,10 +1,10 @@
-### PayrollReport02.py ファイル
+### PayrollReport02.py 
 import csv
 
 def read_employees_from_csv(filename):
     with open(filename, mode='r', newline='') as csvfile:
         reader = csv.reader(csvfile)
-        next(reader)  # This skips the header row
+        next(reader) 
         employees = [row for row in reader]
     return employees
 
