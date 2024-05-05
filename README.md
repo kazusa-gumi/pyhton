@@ -24,5 +24,12 @@ plt.show()
 data = 0.5
 data.as_integer_ratio()
 
+アルファベットの方が大きい
+'111' < 'a'
+
+lowercase letter の方が大きい
+数字よりも
+'111' < 'a'
+
 
 # ここはコメント
