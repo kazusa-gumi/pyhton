@@ -31,5 +31,14 @@ lowercase letter の方が大きい
 数字よりも
 '111' < 'a'
 
+string = input("文字列を入力してください：")
+if string.isdecimal():
+  print(string, "は数字です。")
+elif string.isalpha:
+  print(string, "は数字ではないです。文字")
+else: 
+  print("nothing")
+
+  else ifの時はelif
 
 # ここはコメント
