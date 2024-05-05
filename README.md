@@ -41,4 +41,8 @@ else:
 
   else ifの時はelif
 
+
+ANDは&&
+ORは||って感じ
+
 # ここはコメント
