@@ -53,4 +53,12 @@ Reactなら！だったけどPythonはnotと記載する。
 
 whileで途中で抜ける場合は
 breakをおく
+
+def func(arg1, arg2, arg3):
+  print("argは”, arg1, arg2, arg3, "です。"）
+func(1,2,3)みたいな感じで引数に値を入れたけど（位置引数）
+
+以下のように引数を指定するときはキーワード引数という。
+func(arg1="引数1", arg2="引数２", arg3="引数3")
+
 # ここはコメント
