@@ -95,3 +95,29 @@ print(values[0] + values[2])
 values = (10, 20, 30, 40, 50)
 print(values[0] + values[2])
 
+①シーケンス
+シーケンスは、複数の要素を順番に並べたdataの集まりのこと
+要素はインデックスを[1]とか使用してアクセス＆計算できる
+
+リスト
+my_list = [1, 2, 3, 4, 5]
+
+タプル
+my_tuple = (1, 2, 3, 4, 5)
+
+Range
+my_range = range(1, 6)  # 1から5までの範囲
+
+文字列
+my_string = "Hello, World!"
+
+②コレクション
+複数要素をまとめて管理するためのデータ構造のこと。
+リスト
+my_list = [1, 2, 3, 4, 5]
+
+セット
+my_set = {1, 2, 3, 4, 5}
+
+辞書
+my_dict = {'apple': 3, 'banana': 5, 'orange': 2}
