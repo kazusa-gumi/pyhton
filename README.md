@@ -85,3 +85,13 @@ print(a)
 リストとタプルを間違えないように注意してほしい！
 list_values = [1, 2, 3]  # リスト
 tuple_values = (1, 2, 3) # タプル
+
+listは単なる配列
+タプルは緯度と経緯みたいな感じ(1111,222)でセットです。
+
+タプルとリストはindexを指定することもできる！
+values = [10, 20, 30, 40, 55]
+print(values[0] + values[2])
+values = (10, 20, 30, 40, 50)
+print(values[0] + values[2])
+
