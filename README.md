@@ -81,3 +81,7 @@ print(a["car"])
 a = {"aa": "AA", "bb": "BB", "cc": "CC"}
 del a["aa"]
 print(a)
+
+リストとタプルを間違えないように注意してほしい！
+list_values = [1, 2, 3]  # リスト
+tuple_values = (1, 2, 3) # タプル
