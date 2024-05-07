@@ -61,4 +61,9 @@ func(1,2,3)みたいな感じで引数に値を入れたけど（位置引数）
 以下のように引数を指定するときはキーワード引数という。
 func(arg1="引数1", arg2="引数２", arg3="引数3")
 
+Array, List
+values = [1, 2, 3, 4]
+
+for value in values:
+    print("valueは", value, "value*valueは", value*value)
 # ここはコメント
