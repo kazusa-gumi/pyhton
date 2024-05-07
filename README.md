@@ -76,3 +76,8 @@ print(english_words["orange"])
 a = {}
 a["car"] = "ねこ"
 print(a["car"])
+
+要素の削除
+a = {"aa": "AA", "bb": "BB", "cc": "CC"}
+del a["aa"]
+print(a)
