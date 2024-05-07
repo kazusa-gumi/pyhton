@@ -67,3 +67,7 @@ values = [1, 2, 3, 4]
 for value in values:
     print("valueは", value, "value*valueは", value*value)
 # ここはコメント
+
+辞書オブジェクト
+english_words = {"apple": "りんご", "orange": "みかん", "peach": "もも"}
+print(english_words["orange"])
