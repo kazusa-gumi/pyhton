@@ -71,3 +71,8 @@ for value in values:
 辞書オブジェクト
 english_words = {"apple": "りんご", "orange": "みかん", "peach": "もも"}
 print(english_words["orange"])
+
+要素の追加をする。
+a = {}
+a["car"] = "ねこ"
+print(a["car"])
