@@ -121,3 +121,5 @@ my_set = {1, 2, 3, 4, 5}
 
 辞書
 my_dict = {'apple': 3, 'banana': 5, 'orange': 2}
+
+配列
